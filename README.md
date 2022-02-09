@@ -4,7 +4,7 @@ Configure ulimit on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-ulimit/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-ulimit/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-ulimit/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-ulimit)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/ulimit)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/ulimit)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-ulimit.svg)](https://github.com/buluma/ansible-role-ulimit/releases/)|
+|[![github](https://github.com/buluma/ansible-role-ulimit/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-ulimit/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-ulimit/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-ulimit)|[![quality](https://img.shields.io/ansible/quality/57987)](https://galaxy.ansible.com/buluma/ulimit)|[![downloads](https://img.shields.io/ansible/role/d/57987)](https://galaxy.ansible.com/buluma/ulimit)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-ulimit.svg)](https://github.com/buluma/ansible-role-ulimit/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
