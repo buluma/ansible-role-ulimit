@@ -1,6 +1,6 @@
 # [ulimit](#ulimit)
 
-Install ruby on your system.
+Configure ulimit on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
@@ -11,19 +11,32 @@ Install ruby on your system.
 This example is taken from `molecule/default/converge.yml` and is tested on each push, pull request and release.
 ```yaml
 ---
-- name: Converge
+- name: converge
   hosts: all
   become: yes
-  gather_facts: yes
+  gather_facts: no
 
   roles:
-    - role: buluma.ruby
+    - role: buluma.ulimit
+      ulimit_items:
+        - limit_item: nofile
+          domain: root
+          limit_type: soft
+          value: 1048576
+        - limit_item: nproc
+          domain: root
+          limit_type: soft
+          value: 1024
+        - limit_item: nproc
+          domain: root
+          limit_type: hard
+          value: 2048
 ```
 
 The machine needs to be prepared. In CI this is done using `molecule/default/prepare.yml`:
 ```yaml
 ---
-- name: Prepare
+- name: prepare
   hosts: all
   become: yes
   gather_facts: no
@@ -33,6 +46,25 @@ The machine needs to be prepared. In CI this is done using `molecule/default/pre
 ```
 
 
+## [Role Variables](#role-variables)
+
+The default values for the variables are set in `defaults/main.yml`:
+```yaml
+---
+# defaults file for ulimit
+
+# Set the default domain. This can be overwritten per item.
+ulimit_domain: '*'
+
+# Set the limit type. This can be overwritten per item.
+ulimit_limit_type: soft
+
+# Set the file where to write to.
+ulimit_dest: /etc/security/limits.conf
+
+# Should a backup of limits.conf be created on changes?
+ulimit_backup: yes
+```
 
 ## [Requirements](#requirements)
 
@@ -60,7 +92,6 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 
 |container|tags|
 |---------|----|
-|alpine|all|
 |amazon|Candidate|
 |el|8|
 |debian|all|
@@ -74,6 +105,13 @@ The minimum version of Ansible required is 2.10, tests have been done to:
 - The current version.
 - The development version.
 
+## [Exceptions](#exceptions)
+
+Some roles can't run on a specific distribution or version. Here are some exceptions.
+
+| variation                 | reason                 |
+|---------------------------|------------------------|
+| Alpine | directory /etc/security is not writable |
 
 
 If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-ulimit/issues)
