@@ -13,7 +13,7 @@ on:
       - '*'
   pull_request:
   schedule:
-    - cron: '0 0/2 * * *'
+    - cron: '41 21 * * *'
   workflow_dispatch:
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
         with:
           path: "${{ github.repository }}"
       - name: molecule
-        uses: buluma/molecule-action@v4.0.5
+        uses: buluma/molecule-action@v4.0.6
         with:
           command: lint
   test:
@@ -47,6 +47,8 @@ jobs:
           - image: "fedora-systemd"
             tag: "34"
           - image: "fedora-systemd"
+            tag: "latest"
+          - image: "fedora-systemd"
             tag: "rawhide"
           - image: "opensuse"
             tag: "latest"
@@ -54,6 +56,8 @@ jobs:
             tag: "latest"
           - image: "docker-ubuntu-systemd"
             tag: "bionic"
+          - image: "docker-ubuntu-systemd"
+            tag: "focal"
     steps:
       - name: checkout
         uses: actions/checkout@v2.4.0
@@ -64,7 +68,7 @@ jobs:
       - name: parse apparmor for mysql
         run: sudo apparmor_parser -R /etc/apparmor.d/usr.sbin.mysqld
       - name: molecule
-        uses: buluma/molecule-action@v4.0.5
+        uses: buluma/molecule-action@v4.0.6
         with:
           image: ${{ matrix.config.image }}
           tag: ${{ matrix.config.tag }}
