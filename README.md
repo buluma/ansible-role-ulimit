@@ -2,9 +2,9 @@
 
 Configure ulimit on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-ulimit/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-ulimit/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-ulimit/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-ulimit)|[![quality](https://img.shields.io/ansible/quality/57987)](https://galaxy.ansible.com/buluma/ulimit)|[![downloads](https://img.shields.io/ansible/role/d/57987)](https://galaxy.ansible.com/buluma/ulimit)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-ulimit.svg)](https://github.com/buluma/ansible-role-ulimit/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-ulimit.svg)](https://github.com/buluma/ansible-role-ulimit/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-ulimit.svg)](https://github.com/buluma/ansible-role-ulimit/pulls/)|
+|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-ulimit/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-ulimit/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-ulimit/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-ulimit)|[![downloads](https://img.shields.io/ansible/role/d/4867)](https://galaxy.ansible.com/buluma/ulimit)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-ulimit.svg)](https://github.com/buluma/ansible-role-ulimit/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-ulimit.svg)](https://github.com/buluma/ansible-role-ulimit/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-ulimit.svg)](https://github.com/buluma/ansible-role-ulimit/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
