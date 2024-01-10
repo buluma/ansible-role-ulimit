@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-ulimit/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-ulimit/compare/1.1.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.5 to 1.0.8 [\#20](https://github.com/buluma/ansible-role-ulimit/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/checkout from 3 to 4 [\#19](https://github.com/buluma/ansible-role-ulimit/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [1.1.0](https://github.com/buluma/ansible-role-ulimit/tree/1.1.0) (2024-01-02)
 
 [Full Changelog](https://github.com/buluma/ansible-role-ulimit/compare/1.0.8...1.1.0)
