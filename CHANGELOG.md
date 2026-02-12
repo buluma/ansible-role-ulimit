@@ -6,7 +6,6 @@
 
 **Merged pull requests:**
 
-- Bump buluma/dependabot-auto-merge-action from 2.1.1 to 2.1.2 [\#24](https://github.com/buluma/ansible-role-ulimit/pull/24) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 5 to 6 [\#23](https://github.com/buluma/ansible-role-ulimit/pull/23) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [1.2.0](https://github.com/buluma/ansible-role-ulimit/tree/1.2.0) (2024-01-20)
@@ -58,6 +57,7 @@
 
 **Merged pull requests:**
 
+- Bump buluma/dependabot-auto-merge-action from 2.1.1 to 2.1.2 [\#24](https://github.com/buluma/ansible-role-ulimit/pull/24) ([dependabot[bot]](https://github.com/apps/dependabot))
 - concurrency [\#6](https://github.com/buluma/ansible-role-ulimit/pull/6) ([buluma](https://github.com/buluma))
 
 ## [1.0.3](https://github.com/buluma/ansible-role-ulimit/tree/1.0.3) (2022-02-12)
