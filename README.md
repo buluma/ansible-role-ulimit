@@ -58,7 +58,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 # defaults file for ulimit
 
 # Set the default domain. This can be overwritten per item.
-ulimit_domain: '*'
+ulimit_domain: "*"
 
 # Set the limit type. This can be overwritten per item.
 ulimit_limit_type: soft
