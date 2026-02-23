@@ -12,39 +12,39 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-  - name: Converge
-    hosts: all
-    become: true
-    gather_facts: false
+- name: Converge
+  hosts: all
+  become: true
+  gather_facts: false
 
-    roles:
-      - role: buluma.ulimit
-        ulimit_items:
-          - limit_item: nofile
-            domain: root
-            limit_type: soft
-            value: 1048576
-          - limit_item: nproc
-            domain: root
-            limit_type: soft
-            value: 1024
-          - limit_item: nproc
-            domain: root
-            limit_type: hard
-            value: 2048
+  roles:
+  - role: buluma.ulimit
+    ulimit_items:
+    - limit_item: nofile
+      domain: root
+      limit_type: soft
+      value: 1048576
+    - limit_item: nproc
+      domain: root
+      limit_type: soft
+      value: 1024
+    - limit_item: nproc
+      domain: root
+      limit_type: hard
+      value: 2048
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-ulimit/blob/master/molecule/default/prepare.yml):
 
 ```yaml
 ---
-  - name: Prepare
-    hosts: all
-    become: true
-    gather_facts: false
+- name: Prepare
+  hosts: all
+  become: true
+  gather_facts: false
 
-    roles:
-      - role: buluma.bootstrap
+  roles:
+  - role: buluma.bootstrap
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
